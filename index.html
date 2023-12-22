@@ -42,10 +42,10 @@
   <h1>Todo lo haria diferente</h1>
   <p> 
 
-      <div>How much longer will it take to cure this?</div>
-      <div>Just to cure it 'cause I can't ignore it if it's love (love)</div>
-      <div>Makes me wanna turn around and face me</div>
-      <div>But I don't know nothing 'bout love, oh</div>
+      <div>I'm not good at goodbyes</div>
+      <div>I miss the sunshine in your eyes</div>
+      <div>Who said cowboys don't cry?</div>
+      <div>Come on, baby, let's take one last ride</div>
       
 
 
@@ -63,11 +63,16 @@
    
 
 </p>
-  <button onclick="openModal()">soy un tonto</button>
+  <button onclick="openModal()">Botón 1</button>
+  <button onclick="openModal2()">Botón 2</button>
   <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImage" src="chuek.jpg" alt="Imagen">
   </div>
+     <div id="myModal2" class="modal">
+      <span class="close" onclick="closeModal2()">&times;</span>
+      <img class="modal-content" id="modalImage2" src="chuek.jpg" alt="Otra Imagen">
+    </div>
 
   <script>
     function openModal() {
@@ -76,6 +81,13 @@
 
     function closeModal() {
       document.getElementById("myModal").style.display = "none";
+    }
+    function openModal2() {
+      document.getElementById("myModal2").style.display = "block";
+    }
+
+    function closeModal2() {
+      document.getElementById("myModal2").style.display = "none";
     }
   </script>
 </body>
